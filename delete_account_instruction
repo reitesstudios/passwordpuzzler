@@ -1,0 +1,26 @@
+Account Deletion Instruction Password Puzzler
+Before you start the account deletion process, make sure you have access to Telegram and your account in the game.
+
+Step 1: Bot Login
+
+Open Telegram and find our bot @reitesstudios_bot or https://t.me/reitesstudios_bot.
+Type the command /start to initiate interaction with the bot.
+Step 2: Account Deletion Request
+
+Send the command /delete_account to the bot.
+
+The bot will prompt you to enter your username and password for the in-game account.
+
+Example:
+
+Username: your_username
+Password: your_password
+The bot will confirm the receipt of your data and request you to confirm the account deletion.
+
+Step 3: Confirm Deletion
+
+After your confirmation, the bot will send you a notification that your account deletion request has been received.
+
+Your account will be marked for deletion. You will receive a notification when the process is completed.
+
+If you encounter difficulties or have questions, contact our support service at reitesstudios@gmail.com.
