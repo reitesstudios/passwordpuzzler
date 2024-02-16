@@ -6,7 +6,7 @@
 <meta name="description" content="Our Roadmap is a non-exhaustive list of the current goals we aim to achieve through new developments and continuous integration, made possible with the support of our generous patrons.">
 <meta name="keywords" content="rpcs3, playstation, playstation 3, ps3, emulator, debugger, windows, linux, macos, freebsd, open source, nekotekina, kd11, roadmap">
 <?php include 'lib/module/sys-meta.php';?>
-<meta property="og:title" content="RPCS3 - Roadmap" />
+<meta property="og:title" content="Reites Studios" />
 <meta property="og:description" content="Our Roadmap is a non-exhaustive list of the current goals we aim to achieve through new developments and continuous integration, made possible with the support of our generous patrons." />
 <meta property="og:image" content="https://rpcs3.net/img/meta/mobile/1200.png" />
 <meta property="og:image:width" content="1200" />
@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://rpcs3.net" />
 <meta property="og:locale" content="en_US"/>
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="RPCS3" />
+<meta property="og:site_name" content="Reites Studios" />
 
 <meta name="twitter:title" content="RPCS3 - Roadmap">
 <meta name="twitter:description" content="Our Roadmap is a non-exhaustive list of the current goals we aim to achieve through new developments and continuous integration, made possible with the support of our generous patrons.">
