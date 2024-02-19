@@ -220,14 +220,33 @@ Reites Studios
 
 <div id="privacy_policy" style="display: none;">
   <h2>Политика конфиденциальности</h2>
-  <!-- Ваш текст политики конфиденциальности -->
+  <p>Ваш текст политики конфиденциальности здесь...</p>
+  <button onclick="hidePrivacyPolicy()">Закрыть</button>
 </div>
 
 <script>
 function showPrivacyPolicy() {
+  // Скрываем все элементы, кроме модального окна с политикой конфиденциальности
+  var elementsToHide = document.querySelectorAll('body > *:not(#privacy_policy)');
+  for (var i = 0; i < elementsToHide.length; i++) {
+    elementsToHide[i].style.display = 'none';
+  }
+  // Показываем модальное окно с политикой конфиденциальности
   document.getElementById('privacy_policy').style.display = 'block';
 }
+
+function hidePrivacyPolicy() {
+  // Показываем все скрытые элементы
+  var elementsToShow = document.querySelectorAll('body > *:not(#privacy_policy)');
+  for (var i = 0; i < elementsToShow.length; i++) {
+    elementsToShow[i].style.display = 'block';
+  }
+  // Скрываем модальное окно с политикой конфиденциальности
+  document.getElementById('privacy_policy').style.display = 'none';
+}
 </script>
+
+
 
 </header>
 <main class="main">
