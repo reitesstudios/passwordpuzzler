@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru" >
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <title>Reites Studios - Игровая студия мобильной разработки</title>
-<style type="text/css">
+<style>
+/* Ваши существующие стили */
 a{
 color: #fff;
 text-decoration: none;
@@ -201,6 +202,42 @@ margin-left: 0;
 margin: 0;
 }
 }
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* По умолчанию модальное окно скрыто */
+    position: fixed; /* Фиксированная позиция, чтобы оно оставалось на экране */
+    z-index: 1; /* Расположение модального окна поверх других элементов */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Добавляет полосы прокрутки, если контент слишком большой */
+    background-color: rgba(0,0,0,0.4); /* Полупрозрачный чёрный фон */
+    padding-top: 60px; /* Отступ сверху */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Отступ сверху и снизу, 5% от ширины контейнера */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина контента */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -210,11 +247,8 @@ Reites Studios
 </a>
 <nav class="nav">
 <a href="#projects" class="nav-item">Проекты</a>
-<a href="#privacy_policy" class="nav-item2">Политика конфиденциальности</a>
+<a href="#" class="nav-item2" onclick="document.getElementById('myModal').style.display='block'">Политика конфиденциальности</a>
 </nav>
-
-
-
 
 </header>
 <main class="main">
@@ -232,5 +266,18 @@ Reites Studios
 <footer class="footer"  id="footer">
 Связь: reitesstudios@gmail.com
 </footer>
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+  <!-- Контент модального окна -->
+  <div class="modal-content">
+    <!-- Кнопка для закрытия модального окна -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    <!-- Содержимое политики конфиденциальности -->
+    <h2>Политика конфиденциальности</h2>
+    <p>Ваш текст политики конфиденциальности здесь...</p>
+  </div>
+</div>
+
 </body>
 </html>
