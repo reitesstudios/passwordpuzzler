@@ -214,13 +214,20 @@ function openPrivacyPolicy() {
 Reites Studios
 </a>
 <nav class="nav">
-<a href="#projects" class="nav-item">Проекты</a>
+  <a href="#projects" class="nav-item">Проекты</a>
+  <a href="#" class="nav-item2" onclick="showPrivacyPolicy()">Политика конфиденциальности</a>
+</nav>
+
+<div id="privacy_policy" style="display: none;">
+  <h2>Политика конфиденциальности</h2>
+  <!-- Ваш текст политики конфиденциальности -->
+</div>
+
 <script>
 function showPrivacyPolicy() {
-    document.getElementById('privacy_policy').style.display = 'block';
+  document.getElementById('privacy_policy').style.display = 'block';
 }
 </script>
-</nav>
 
 </header>
 <main class="main">
