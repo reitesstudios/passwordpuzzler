@@ -202,11 +202,6 @@ margin: 0;
 }
 }
 </style>
-<script>
-function openPrivacyPolicy() {
-  window.open('privacy_policy.html', '_blank', 'width=600,height=400');
-}
-</script>
 </head>
 <body>
 <header class="header">
@@ -216,39 +211,9 @@ Reites Studios
 
   
 <nav class="nav">
-  <a href="#projects" class="nav-item">Проекты</a>
-  <a href="#" class="nav-item2" onclick="showPrivacyPolicy()">Политика конфиденциальности</a>
+<a href="#posts" class="nav-item">Проекты</a>
+<a href="#comments" class="nav-item2">Политика конфиденциальности</a>
 </nav>
-
-<div id="privacy_policy" style="display: none;">
-  <div style="background-color: white; padding: 20px;">
-    <h2>Политика конфиденциальности</h2>
-    <p>Ваш текст политики конфиденциальности здесь...</p>
-    <button onclick="hidePrivacyPolicy()">Закрыть</button>
-  </div>
-</div>
-
-<script>
-function showPrivacyPolicy() {
-  // Скрываем все элементы, кроме модального окна с политикой конфиденциальности
-  var elementsToHide = document.querySelectorAll('body > *:not(#privacy_policy)');
-  for (var i = 0; i < elementsToHide.length; i++) {
-    elementsToHide[i].style.display = 'none';
-  }
-  // Показываем модальное окно с политикой конфиденциальности
-  document.getElementById('privacy_policy').style.display = 'block';
-}
-
-function hidePrivacyPolicy() {
-  // Показываем все скрытые элементы
-  var elementsToShow = document.querySelectorAll('body > *:not(#privacy_policy)');
-  for (var i = 0; i < elementsToShow.length; i++) {
-    elementsToShow[i].style.display = 'block';
-  }
-  // Скрываем модальное окно с политикой конфиденциальности
-  document.getElementById('privacy_policy').style.display = 'none';
-}
-</script>
 
 
 
